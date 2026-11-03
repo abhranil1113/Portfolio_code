@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#311042" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="340" fill="url(#bg3)" />
+  <g transform="translate(60, 45)">
+    <rect x="0" y="0" width="480" height="250" rx="12" fill="#0f0e26" stroke="#c084fc" stroke-width="2" />
+    <rect x="0" y="0" width="480" height="34" rx="12" fill="#2e1065" />
+    <circle cx="20" cy="17" r="5" fill="#ef4444" />
+    <circle cx="36" cy="17" r="5" fill="#eab308" />
+    <circle cx="52" cy="17" r="5" fill="#22c55e" />
+    <text x="80" y="21" font-family="'JetBrains Mono', monospace" font-size="12" fill="#e9d5ff">vector-rag-engine :: pgvector / FastAPI / LangChain</text>
+
+    <!-- Query Vector Diagram -->
+    <rect x="30" y="60" width="120" height="50" rx="6" fill="#1e1b4b" stroke="#a855f7" stroke-width="1.5" />
+    <text x="90" y="85" font-family="'Inter', sans-serif" font-size="11" font-weight="bold" fill="#f5d0fe" text-anchor="middle">Input Query</text>
+    <text x="90" y="100" font-family="'JetBrains Mono', monospace" font-size="9" fill="#d8b4fe" text-anchor="middle">text-embedding-3</text>
+
+    <line x1="150" y1="85" x2="200" y2="85" stroke="#e879f9" stroke-width="2" stroke-dasharray="3,3" />
+
+    <rect x="200" y="55" width="130" height="60" rx="6" fill="#1e1b4b" stroke="#ec4899" stroke-width="1.5" />
+    <text x="265" y="82" font-family="'Inter', sans-serif" font-size="11" font-weight="bold" fill="#fdf2f8" text-anchor="middle">HNSW Cosine Index</text>
+    <text x="265" y="100" font-family="'JetBrains Mono', monospace" font-size="9" fill="#f472b6" text-anchor="middle">PostgreSQL 16</text>
+
+    <line x1="330" y1="85" x2="380" y2="85" stroke="#e879f9" stroke-width="2" stroke-dasharray="3,3" />
+
+    <rect x="380" y="60" width="80" height="50" rx="6" fill="#1e1b4b" stroke="#06b6d4" stroke-width="1.5" />
+    <text x="420" y="85" font-family="'Inter', sans-serif" font-size="11" font-weight="bold" fill="#cffafe" text-anchor="middle">Re-Ranker</text>
+    <text x="420" y="100" font-family="'JetBrains Mono', monospace" font-size="9" fill="#67e8f9" text-anchor="middle">Cross-Encoder</text>
+
+    <!-- Lower stats -->
+    <rect x="30" y="140" width="420" height="85" rx="8" fill="#181534" />
+    <text x="50" y="165" font-family="'JetBrains Mono', monospace" font-size="12" fill="#f0abfc">&gt; Retrieval latency p95: 14.2ms | Precision@5: 94.8%</text>
+    <text x="50" y="190" font-family="'JetBrains Mono', monospace" font-size="12" fill="#cbd5e1">&gt; Chunking strategy: Semantic Recursive Tokenizer (512 tokens)</text>
+    <text x="50" y="212" font-family="'JetBrains Mono', monospace" font-size="12" fill="#4ade80">&gt; API status: 200 OK | Streaming SSE tokens enabled</text>
+  </g>
+</svg>
+
